@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="{{ url_for('static',filename='styles/style_login.css') }}" />
+<!--    <link rel="stylesheet" href="style.css">-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Roomie | Register</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Roomie | Login</title>
+      </head>
+      <body>
+          <nav class="navbar navbar-light bg-light">
+          <a class="roomie">R O O M I E</a>
+          <a class="home">Home About Login Sign-up</a>
+          <a class="about"></a>
+          <a class="login"></a>
+          <a class="signup"></a>
+        </nav>
+      <div class="image">
+         <img src="{{ url_for('static',filename='styles/Login.png') }}" alt="image" class="animate__animated animate__rotateIn">
+<!--        <img src="Login.png" alt="image" class="animate__animated animate__rotateIn">-->
+        </div>
+        <form method="post">
+          <div class="container">
+            <h1>Sign In</h1>
+
+            <label for="email"><b>Username</b></label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter Username"
+              required
+            />
+
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="password"
+              required
+            />
+
+            <div class="clearfix">
+              <button type="submit" class="btn">Sign In</button>
+              <p><strong>Forgot password?</strong></p>
+            </div>
+          </div>
+        </form>
+          </a>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>
